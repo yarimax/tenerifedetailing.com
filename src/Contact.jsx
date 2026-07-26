@@ -13,10 +13,10 @@ export default function Contact() {
           {t('CONT_TITLE')}<span className="text-blue-500">.</span>
         </h2>
 
-        {/* Сетка: инфо слева, карта справа */}
+        {/* Сітка: Інфо + Карта */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-          {/* Инфо */}
+          {/* Інфо */}
           <div className="flex flex-col gap-8">
             <div className="flex gap-5 items-center">
               <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 shrink-0">
@@ -33,19 +33,22 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-wrap gap-4 pt-4">
+              {/* WhatsApp (Новий номер) */}
               <a
                 href="https://wa.me/34633260683"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-blue-500 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl shadow-blue-500/20 text-sm"
               >
-                <MessageCircle size={18} /> {t('CONT_WHATSAPP')}
+                <MessageCircle size={18} /> {t('CONT_WA', 'WhatsApp')}
               </a>
+
+              {/* Дзвінок (Новий номер) */}
               <a
                 href="tel:+34633260683"
                 className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
               >
-                <Phone size={18} /> {t('CONT_CALL')}
+                <Phone size={18} /> {t('CONT_CALL', 'Call')}
               </a>
             </div>
           </div>
