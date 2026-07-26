@@ -8,15 +8,15 @@ export default function Contact() {
     <section id="contact" className="py-24 bg-[#050505]">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Заголовок — на всю ширину, над усім */}
+        {/* Заголовок */}
         <h2 className="text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-none mb-16">
           {t('CONT_TITLE')}<span className="text-blue-500">.</span>
         </h2>
 
-        {/* Сітка: ліво — інфо, право — карта */}
+        {/* Сетка: инфо слева, карта справа */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-          {/* Інфо */}
+          {/* Инфо */}
           <div className="flex flex-col gap-8">
             <div className="flex gap-5 items-center">
               <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 shrink-0">
