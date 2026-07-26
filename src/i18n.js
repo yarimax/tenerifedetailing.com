@@ -10,16 +10,16 @@ i18n
             es: {
                 translation: {
                     NAV_HOME: "Inicio", NAV_SERVICES: "Servicios", NAV_PORTFOLIO: "Proyectos", NAV_CONTACT: "Contacto",
-                    HERO_T1: "Detallado", HERO_TG: "profesional", HERO_T2: "en Tenerife", HERO_SUB: "Cuidado premium para su vehículo. Cerámica, PDR и restauración.", HERO_CTA: "Solicitar cita",
+                    HERO_T1: "Detallado", HERO_TG: "profesional", HERO_T2: "en Tenerife", HERO_SUB: "Cuidado premium para su vehículo. Cerámica, PDR y restauración.", HERO_CTA: "Solicitar cita",
                     S_TITLE: "Nuestros", S_TITLE_GLOW: "Servicios",
                     SER_1_T: "Cerámica", SER_1_D: "Protección premium contra rayos UV y arañazos.", SER_1_P: "Desde 450 €",
                     SER_2_T: "PDR", SER_2_D: "Eliminación de abolladuras sin necesidad de pintar.", SER_2_P: "Individual",
                     SER_3_T: "Interior", SER_3_D: "Restauración profunda de cuero y limpieza de tela.", SER_3_P: "Desde 100 €",
                     SER_4_T: "Faros", SER_4_D: "Pulido profesional y protección de óptica.", SER_4_P: "Desde 35 €",
-                    SER_5_T: "Vinilo", SER_5_D: "Cambio de color и protección total de carrocería.", SER_5_P: "Consultar",
+                    SER_5_T: "Vinilo", SER_5_D: "Cambio de color y protección total de carrocería.", SER_5_P: "Consultar",
                     SER_6_T: "Motor", SER_6_D: "Limpieza detallada del vano motor con seguridad.", SER_6_P: "Desde 50 €",
-                    SER_7_T: "Cristales", SER_7_D: "Tratamiento repelente al agua и sellado.", SER_7_P: "Desde 30 €",
-                    SER_8_T: "Ozono", SER_8_D: "Desinfección total и eliminación de olores.", SER_8_P: "Desde 25 €",
+                    SER_7_T: "Cristales", SER_7_D: "Tratamiento repelente al agua y sellado.", SER_7_P: "Desde 30 €",
+                    SER_8_T: "Ozono", SER_8_D: "Desinfección total y eliminación de olores.", SER_8_P: "Desde 25 €",
                     GAL_TITLE_1: "Nuestros", GAL_TITLE_GLOW: "Proyectos", GAL_SUB: "Trabajo de precisión",
                     GAL_1: "CERÁMICA PREMIUM", GAL_2: "REPARACIÓN PDR", GAL_3: "DETALLADO DE INTERIOR", GAL_4: "PULIDO DE FAROS",
                     GAL_LINK: "VER PROYECTO →",
@@ -93,76 +93,3 @@ i18n
     });
 
 export default i18n;
-
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-
-i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-        resources: {
-            es: {
-                translation: {
-                    GAL_TITLE_1: "Nuestros",
-                    GAL_TITLE_GLOW: "Proyectos",
-                    GAL_SUB: "TRABAJO DE PRECISIÓN",
-                    GAL_1: "CERÁMICA PREMIUM",
-                    GAL_2: "REPARACIÓN PDR",
-                    GAL_3: "DETALLADO DE INTERIOR",
-                    GAL_4: "PULIDO DE FAROS",
-                    GAL_LINK: "VER PROYECTO →",
-                    // Інші ключі для Навбара та Сервісів
-                    NAV_HOME: "Inicio", NAV_SERVICES: "Servicios", NAV_PORTFOLIO: "Proyectos", NAV_CONTACT: "Contacto",
-                    HERO_T1: "Detallado", HERO_TG: "profesional", HERO_T2: "en Tenerife", HERO_CTA: "Cita previa",
-                    S_TITLE: "Nuestros", S_TITLE_GLOW: "Servicios",
-                    SER_1_T: "Cerámica", SER_2_T: "PDR", SER_3_T: "Interior", SER_4_T: "Faros"
-                }
-            },
-            ru: {
-                translation: {
-                    GAL_TITLE_1: "Наши",
-                    GAL_TITLE_GLOW: "Работы",
-                    GAL_SUB: "ТОЧНОСТЬ В ДЕТАЛЯХ",
-                    GAL_1: "ПРЕМИУМ КЕРАМИКА",
-                    GAL_2: "УДАЛЕНИЕ ВМЯТИН",
-                    GAL_3: "ДЕТЕЙЛИНГ САЛОНА",
-                    GAL_4: "ПОЛИРОВКА ФАР",
-                    GAL_LINK: "ПОДРОБНЕЕ →",
-                    NAV_HOME: "Главная", NAV_SERVICES: "Услуги", NAV_PORTFOLIO: "Работы", NAV_CONTACT: "Контакты",
-                    HERO_T1: "Профессиональный", HERO_TG: "детейлинг", HERO_T2: "на Тенерифе", HERO_CTA: "Записаться"
-                }
-            },
-            en: {
-                translation: {
-                    GAL_TITLE_1: "Our",
-                    GAL_TITLE_GLOW: "Projects",
-                    GAL_SUB: "PRECISION WORK",
-                    GAL_1: "PREMIUM CERAMIC",
-                    GAL_2: "PDR REPAIR",
-                    GAL_3: "INTERIOR DETAILING",
-                    GAL_4: "HEADLIGHT POLISHING",
-                    GAL_LINK: "VIEW PROJECT →",
-                    NAV_HOME: "Home", NAV_SERVICES: "Services", NAV_PORTFOLIO: "Projects", NAV_CONTACT: "Contact"
-                }
-            },
-            de: {
-                translation: {
-                    GAL_TITLE_1: "Unsere",
-                    GAL_TITLE_GLOW: "Projekte",
-                    GAL_SUB: "PRÄZISIONSARBEIT",
-                    GAL_1: "PREMIUM KERAMIK",
-                    GAL_2: "PDR REPARATUR",
-                    GAL_3: "INNENRAUM DETAILING",
-                    GAL_4: "SCHEINWERFER POLITUR",
-                    GAL_LINK: "PROJEKT ANSEHEN →",
-                    NAV_HOME: "Startseite", NAV_SERVICES: "Leistungen", NAV_PORTFOLIO: "Portfolio", NAV_CONTACT: "Kontakt"
-                }
-            }
-        },
-        fallbackLng: "es",
-        interpolation: { escapeValue: false }
-    });
-
-export default i18n 
