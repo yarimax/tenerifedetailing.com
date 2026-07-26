@@ -33,7 +33,7 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              {/* WhatsApp (Новий номер) */}
+              {/* WhatsApp */}
               <a
                 href="https://wa.me/34633260683"
                 target="_blank"
@@ -43,7 +43,7 @@ export default function Contact() {
                 <MessageCircle size={18} /> {t('CONT_WA', 'WhatsApp')}
               </a>
 
-              {/* Дзвінок (Новий номер) */}
+              {/* Дзвінок */}
               <a
                 href="tel:+34633260683"
                 className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
