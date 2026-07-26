@@ -34,7 +34,7 @@ export default function Contact() {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="https://wa.me/34614397963"
+                href="https://wa.me/34633260683"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-blue-500 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl shadow-blue-500/20 text-sm"
@@ -42,7 +42,7 @@ export default function Contact() {
                 <MessageCircle size={18} /> {t('CONT_WHATSAPP')}
               </a>
               <a
-                href="tel:+34614397963"
+                href="tel:+34633260683"
                 className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
               >
                 <Phone size={18} /> {t('CONT_CALL')}
