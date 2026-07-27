@@ -41,9 +41,10 @@ export default function Contact() {
 
             {/* Instagram (detailermax) */}
             <a
-              href="https://www.instagram.com/detailermax"
+              href="https://www.instagram.com/detailermax/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
+              referrerPolicy="no-referrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-xl shadow-pink-500/20 text-sm"
             >
               <Instagram size={18} /> Instagram
