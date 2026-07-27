@@ -17,20 +17,20 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-black/90 backdrop-blur-md border-b border-white/10 h-20' : 'bg-transparent h-24'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         
-        {/* Логотип PROCAR / Detailing / TENERIFE */}
-        <a href="#home" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 shrink-0">
+        {/* Оновлений Логотип: TENERIFE / DETAILING / LAB */}
+        <a href="#home" className="flex items-center gap-3 group">
+          <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 shrink-0 group-hover:border-blue-500/50 transition-colors">
             <Droplets size={22} />
           </div>
           <div className="flex flex-col text-left">
             <span className="text-white font-black uppercase text-xl leading-none tracking-tight">
-              PROCAR
-            </span>
-            <span className="text-blue-500 font-bold uppercase text-[10px] leading-tight tracking-widest">
-              Detailing
-            </span>
-            <span className="text-gray-400 font-medium uppercase text-[8px] leading-tight tracking-widest">
               TENERIFE
+            </span>
+            <span className="text-blue-500 font-bold uppercase text-[10px] leading-tight tracking-widest mt-0.5">
+              DETAILING
+            </span>
+            <span className="text-gray-400 font-semibold uppercase text-[8px] leading-tight tracking-[0.25em]">
+              LAB
             </span>
           </div>
         </a>
@@ -73,7 +73,13 @@ export default function Navbar() {
           ))}
           <div className="flex gap-4 pt-4 border-t border-white/10">
             {['es', 'en', 'de', 'ru'].map((lng) => (
-              <button key={lng} onClick={() => { i18n.changeLanguage(lng); setMobileOpen(false); }} className={`uppercase font-black text-sm ${i18n.language.startsWith(lng) ? 'text-blue-500' : 'text-gray-500'}`}>{lng}</button>
+              <button 
+                key={lng} 
+                onClick={() => { i18n.changeLanguage(lng); setMobileOpen(false); }} 
+                className={`uppercase font-black text-sm ${i18n.language.startsWith(lng) ? 'text-blue-500' : 'text-gray-500'}`}
+              >
+                {lng}
+              </button>
             ))}
           </div>
         </div>
