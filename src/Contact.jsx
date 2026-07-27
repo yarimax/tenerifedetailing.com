@@ -39,9 +39,9 @@ export default function Contact() {
               {t('CONT_WA', 'WhatsApp')}
             </a>
 
-            {/* Instagram (З захистом від блокування переходу) */}
+            {/* Instagram (Правильний акаунт) */}
             <a
-              href="https://www.instagram.com/detailermax"
+              href="https://www.instagram.com/procar.detailing.tenerife/"
               target="_blank"
               rel="noreferrer noopener"
               referrerPolicy="no-referrer"
