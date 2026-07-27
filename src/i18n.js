@@ -11,6 +11,7 @@ i18n
                 translation: {
                     NAV_HOME: "Inicio", NAV_SERVICES: "Servicios", NAV_PORTFOLIO: "Proyectos", NAV_CONTACT: "Contacto",
                     HERO_T1: "Detallado", HERO_TG: "profesional", HERO_T2: "en Tenerife", HERO_SUB: "Cuidado premium para su vehículo. Cerámica, PDR y restauración.", HERO_CTA: "Solicitar cita",
+                    HERO_FEAT_1: "Protección Cerámica 9H", HERO_FEAT_2: "Restauración & PDR", HERO_FEAT_3: "Calidad Premium",
                     S_TITLE: "Nuestros", S_TITLE_GLOW: "Servicios",
                     SER_1_T: "Cerámica", SER_1_D: "Protección premium contra rayos UV y arañazos.", SER_1_P: "Desde 450 €",
                     SER_2_T: "PDR", SER_2_D: "Eliminación de abolladuras sin necesidad de pintar.", SER_2_P: "Individual",
@@ -31,6 +32,7 @@ i18n
                 translation: {
                     NAV_HOME: "Главная", NAV_SERVICES: "Услуги", NAV_PORTFOLIO: "Работы", NAV_CONTACT: "Контакты",
                     HERO_T1: "Профессиональный", HERO_TG: "детейлинг", HERO_T2: "на Тенерифе", HERO_SUB: "Премиальный уход за авто. Керамика, PDR и реставрация.", HERO_CTA: "Записаться",
+                    HERO_FEAT_1: "Керамическая защита 9H", HERO_FEAT_2: "Реставрация и PDR", HERO_FEAT_3: "Премиальное качество",
                     S_TITLE: "Наши", S_TITLE_GLOW: "Услуги",
                     SER_1_T: "Керамика", SER_1_D: "Премиальная защита от УФ и царапин.", SER_1_P: "От 450 €",
                     SER_2_T: "PDR", SER_2_D: "Удаление вмятин без покраски.", SER_2_P: "Индивидуально",
@@ -51,6 +53,7 @@ i18n
                 translation: {
                     NAV_HOME: "Home", NAV_SERVICES: "Services", NAV_PORTFOLIO: "Portfolio", NAV_CONTACT: "Contact",
                     HERO_T1: "Professional", HERO_TG: "detailing", HERO_T2: "in Tenerife", HERO_SUB: "Premium car care. Ceramic, PDR and restoration.", HERO_CTA: "Book Now",
+                    HERO_FEAT_1: "9H Ceramic Protection", HERO_FEAT_2: "Restoration & PDR", HERO_FEAT_3: "Premium Quality",
                     S_TITLE: "Our", S_TITLE_GLOW: "Services",
                     SER_1_T: "Ceramic", SER_1_D: "Premium UV and scratch protection.", SER_1_P: "From 450 €",
                     SER_2_T: "PDR", SER_2_D: "Paintless dent removal.", SER_2_P: "Individual",
@@ -71,6 +74,7 @@ i18n
                 translation: {
                     NAV_HOME: "Startseite", NAV_SERVICES: "Leistungen", NAV_PORTFOLIO: "Portfolio", NAV_CONTACT: "Kontakt",
                     HERO_T1: "Professionelles", HERO_TG: "detailing", HERO_T2: "auf Teneriffa", HERO_SUB: "Premium-Pflege. Keramik, PDR und Restaurierung.", HERO_CTA: "Termin buchen",
+                    HERO_FEAT_1: "9H Keramikschutz", HERO_FEAT_2: "Restaurierung & PDR", HERO_FEAT_3: "Premium-Qualität",
                     S_TITLE: "Unsere", S_TITLE_GLOW: "Leistungen",
                     SER_1_T: "Keramik", SER_1_D: "Premium UV- und Kratzschutz.", SER_1_P: "Ab 450 €",
                     SER_2_T: "PDR", SER_2_D: "Dellenentfernung ohne Lackieren.", SER_2_P: "Individuell",
