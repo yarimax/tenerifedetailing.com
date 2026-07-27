@@ -29,7 +29,7 @@ export default function Contact() {
             
             {/* WhatsApp (Новий номер, зелена кнопка з анімацією) */}
             <a
-              href="https://wa.me/34614397963"
+              href="https://wa.me/34633260683"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 shadow-xl shadow-[#25D366]/20 text-sm group overflow-hidden"
@@ -52,7 +52,7 @@ export default function Contact() {
 
             {/* Дзвінок (Новий номер) */}
             <a
-              href="tel:+34614397963"
+              href="tel:+34633260683"
               className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
             >
               <Phone size={18} /> {t('CONT_CALL', 'Call')}
