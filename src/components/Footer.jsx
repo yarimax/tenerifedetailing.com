@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex gap-3">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/34614397963"
+                href="https://wa.me/34633260683"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
@@ -47,7 +47,7 @@ export default function Footer() {
 
               {/* Instagram (Правильний акаунт) */}
               <a
-                href="https://www.instagram.com/procar.detailing.tenerife/"
+                href="https://https://www.instagram.com/detailermax/"
                 target="_blank"
                 rel="noreferrer noopener"
                 referrerPolicy="no-referrer"
