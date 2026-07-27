@@ -16,18 +16,26 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-xl border-b border-white/10 h-20' : 'bg-transparent h-24'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-        {/* Logo */}
-        <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
-            <Droplets size={24} />
+        
+        {/* Новий логотип PROCAR Detailing TENERIFE */}
+        <a href="#home" className="flex items-center gap-3 group">
+          <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all shrink-0">
+            <Droplets size={26} />
           </div>
-          <div className="flex flex-col">
-            <span className="text-white font-black uppercase tracking-tighter text-xl leading-none">AutoDetailing</span>
-            <span className="text-[10px] text-gray-500 uppercase tracking-[0.2em]">Puerto de la Cruz</span>
+          <div className="flex flex-col justify-center leading-none gap-[3px]">
+            <span className="text-white font-black uppercase tracking-tight text-2xl leading-none group-hover:text-blue-400 transition-colors">
+              PROCAR
+            </span>
+            <span className="text-blue-500 font-bold uppercase tracking-[0.2em] text-[10px] leading-none">
+              Detailing
+            </span>
+            <span className="text-gray-400 font-semibold uppercase tracking-[0.35em] text-[8px] leading-none">
+              TENERIFE
+            </span>
           </div>
         </a>
 
-        {/* Desktop links - Збільшений шрифт */}
+        {/* Навігація для комп'ютерів */}
         <div className="hidden md:flex items-center gap-10">
           {['HOME', 'SERVICES', 'PORTFOLIO', 'CONTACT'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="text-[13px] font-bold text-gray-400 hover:text-white uppercase tracking-[0.15em] transition-colors">
@@ -35,7 +43,7 @@ export default function Navbar() {
             </a>
           ))}
 
-          {/* Language Switcher */}
+          {/* Перемикач мов */}
           <div className="flex gap-3 ml-4 border-l border-white/10 pl-8">
             {['es', 'en', 'de', 'ru'].map((lng) => (
               <button
@@ -49,12 +57,13 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Кнопка мобільного меню */}
         <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white">
           {mobileOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Мобільне меню */}
       {mobileOpen && (
         <div className="md:hidden bg-[#0a0a0a] border-b border-white/10 p-8 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
           {['HOME', 'SERVICES', 'PORTFOLIO', 'CONTACT'].map((item) => (
