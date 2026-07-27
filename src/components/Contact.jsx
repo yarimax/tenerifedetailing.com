@@ -27,7 +27,7 @@ export default function Contact() {
           {/* Кнопки зв'язку */}
           <div className="flex flex-wrap gap-4 pt-4">
             
-            {/* WhatsApp (З АКТУАЛЬНИМ НОМЕРОМ) */}
+            {/* WhatsApp */}
             <a
               href="https://wa.me/34633260683"
               target="_blank"
@@ -39,18 +39,17 @@ export default function Contact() {
               {t('CONT_WA', 'WhatsApp')}
             </a>
 
-            {/* Instagram */}
+            {/* Instagram (detailermax) */}
             <a
-              href="https://www.instagram.com/procar.detailing.tenerife/"
+              href="https://www.instagram.com/detailermax"
               target="_blank"
               rel="noreferrer noopener"
-              referrerPolicy="no-referrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-xl shadow-pink-500/20 text-sm"
             >
               <Instagram size={18} /> Instagram
             </a>
 
-            {/* Дзвінок (З АКТУАЛЬНИМ НОМЕРОМ) */}
+            {/* Дзвінок */}
             <a
               href="tel:+34633260683"
               className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
