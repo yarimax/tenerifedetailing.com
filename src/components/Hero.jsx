@@ -1,59 +1,83 @@
-import { Zap, MapPin } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X, Droplets } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
-export default function Hero() {
-  const { t } = useTranslation();
+export default function Navbar() {
+  const { t, i18n } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-32 pb-24 overflow-hidden bg-[#050505]">
-      
-      {/* Фонове фото авто з градієнтним затемненням */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 scale-105 transition-transform duration-1000"
-        style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(5, 5, 5, 0.6) 0%, rgba(5, 5, 5, 0.95) 100%), url('https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=80')`
-        }}
-      />
-
-      {/* Синій світловий блік на тлі */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/20 blur-[160px] pointer-events-none z-0" />
-
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center text-center">
-
-          {/* Бейдж локації */}
-          <div className="fade-up inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 backdrop-blur-md text-blue-400 px-6 py-3 rounded-full mb-10 text-[11px] font-black uppercase tracking-[0.3em] shadow-lg shadow-blue-500/10">
-            <MapPin size={16} /> Puerto de la Cruz, Tenerife
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-black/90 backdrop-blur-xl border-b border-white/10 h-20' : 'bg-transparent h-24'}`}>
+      <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+        
+        {/* Новий логотип PROCAR Detailing TENERIFE */}
+        <a href="#home" className="flex items-center gap-3 group">
+          <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all shrink-0">
+            <Droplets size={26} />
           </div>
+          <div className="flex flex-col justify-center leading-none gap-[3px]">
+            <span className="text-white font-black uppercase tracking-tight text-2xl leading-none group-hover:text-blue-400 transition-colors">
+              PROCAR
+            </span>
+            <span className="text-blue-500 font-bold uppercase tracking-[0.2em] text-[10px] leading-none">
+              Detailing
+            </span>
+            <span className="text-gray-400 font-semibold uppercase tracking-[0.35em] text-[8px] leading-none">
+              TENERIFE
+            </span>
+          </div>
+        </a>
 
-          {/* Головний заголовок із підтримкою перекладів */}
-          <h1 className="fade-up fade-up-delay-1 text-6xl sm:text-7xl md:text-9xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-10 drop-shadow-2xl">
-            {t('HERO_T1')} <br /> 
-            <span className="text-blue-500 drop-shadow-[0_0_35px_rgba(59,130,246,0.5)]">
-              {t('HERO_TG')}
-            </span> <br /> 
-            {t('HERO_T2')}
-          </h1>
-
-          {/* Підзаголовок */}
-          <p className="fade-up fade-up-delay-2 text-gray-300 text-lg sm:text-xl font-light max-w-2xl mb-12 uppercase tracking-wide leading-relaxed">
-            {t('HERO_SUB')}
-          </p>
-
-          {/* Кнопка запису */}
-          <div className="fade-up fade-up-delay-3 flex flex-col sm:flex-row gap-6">
-            <a 
-              href="https://wa.me/34633260683"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-blue-500 hover:bg-blue-600 text-white px-10 py-5 rounded-full text-[13px] font-black uppercase tracking-[0.2em] transition-all duration-300 shadow-xl shadow-blue-500/25 hover:scale-105"
-            >
-              <Zap size={20} /> {t('HERO_CTA')}
+        {/* Навігація для комп'ютерів */}
+        <div className="hidden md:flex items-center gap-10">
+          {['HOME', 'SERVICES', 'PORTFOLIO', 'CONTACT'].map((item) => (
+            <a key={item} href={`#${item.toLowerCase()}`} className="text-[13px] font-bold text-gray-400 hover:text-white uppercase tracking-[0.15em] transition-colors">
+              {t(`NAV_${item}`)}
             </a>
-          </div>
+          ))}
 
+          {/* Перемикач мов */}
+          <div className="flex gap-3 ml-4 border-l border-white/10 pl-8">
+            {['es', 'en', 'de', 'ru'].map((lng) => (
+              <button
+                key={lng}
+                onClick={() => i18n.changeLanguage(lng)}
+                className={`text-[12px] font-black uppercase transition-all ${i18n.language.startsWith(lng) ? 'text-blue-500 scale-110' : 'text-gray-600 hover:text-gray-300'}`}
+              >
+                {lng}
+              </button>
+            ))}
+          </div>
         </div>
+
+        {/* Кнопка мобільного меню */}
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white">
+          {mobileOpen ? <X size={30} /> : <Menu size={30} />}
+        </button>
       </div>
-    </section>
+
+      {/* Мобільне меню */}
+      {mobileOpen && (
+        <div className="md:hidden bg-[#0a0a0a] border-b border-white/10 p-8 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
+          {['HOME', 'SERVICES', 'PORTFOLIO', 'CONTACT'].map((item) => (
+            <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setMobileOpen(false)} className="text-white font-black uppercase text-xl tracking-tight">
+              {t(`NAV_${item}`)}
+            </a>
+          ))}
+          <div className="flex gap-6 pt-6 border-t border-white/5">
+            {['es', 'en', 'de', 'ru'].map((lng) => (
+              <button key={lng} onClick={() => { i18n.changeLanguage(lng); setMobileOpen(false); }} className={`uppercase font-black text-lg ${i18n.language.startsWith(lng) ? 'text-blue-500' : 'text-gray-600'}`}>{lng}</button>
+            ))}
+          </div>
+        </div>
+      )}
+    </nav>
   );
 }
