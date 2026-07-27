@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Clock, MessageCircle, Phone } from 'lucide-react';
+import { Clock, MessageCircle, Phone, Instagram } from 'lucide-react';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -26,23 +26,38 @@ export default function Contact() {
 
           {/* Кнопки зв'язку */}
           <div className="flex flex-wrap gap-4 pt-4">
+            
             {/* WhatsApp */}
             <a
-              href="https://wa.me/34633260683"
+              href="https://wa.me/34614397963"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-blue-500 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl shadow-blue-500/20 text-sm"
+              className="relative inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 shadow-xl shadow-[#25D366]/20 text-sm group overflow-hidden"
             >
-              <MessageCircle size={18} /> {t('CONT_WA', 'WhatsApp')}
+              <span className="absolute -inset-1 rounded-full bg-[#25D366]/40 blur-md group-hover:opacity-100 opacity-50 transition-opacity animate-pulse -z-10" />
+              <MessageCircle size={18} className="animate-bounce" /> 
+              {t('CONT_WA', 'WhatsApp')}
+            </a>
+
+            {/* Instagram (З захистом від блокування переходу) */}
+            <a
+              href="https://www.instagram.com/detailermax"
+              target="_blank"
+              rel="noreferrer noopener"
+              referrerPolicy="no-referrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-xl shadow-pink-500/20 text-sm"
+            >
+              <Instagram size={18} /> Instagram
             </a>
 
             {/* Дзвінок */}
             <a
-              href="tel:+34633260683"
+              href="tel:+34614397963"
               className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
             >
               <Phone size={18} /> {t('CONT_CALL', 'Call')}
             </a>
+
           </div>
 
         </div>
