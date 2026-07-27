@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { MapPin, Clock, MessageCircle, Phone } from 'lucide-react';
+import { MapPin, Clock, MessageCircle, Phone, ExternalLink } from 'lucide-react';
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -13,8 +13,8 @@ export default function Contact() {
           {t('CONT_TITLE')}<span className="text-blue-500">.</span>
         </h2>
 
-        {/* Сітка: Інфо + Карта */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        {/* Сітка: Інфо + Локація */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Інфо */}
           <div className="flex flex-col gap-8">
@@ -53,18 +53,27 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Карта */}
-          <div className="h-[420px] rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl">
-            <iframe
-              title="Location"
-              src="https://maps.google.com/maps?q=C.+de+Valois+33,+Puerto+de+la+Cruz,+Tenerife,+Spain&output=embed&z=16"
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: 'grayscale(1) invert(0.9)' }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          {/* Плашка замість iframe картування */}
+          <div className="h-[320px] rounded-[2rem] border border-white/10 bg-white/5 p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-transparent opacity-50" />
+            
+            <div className="relative z-10">
+              <div className="w-12 h-12 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-500 mb-4">
+                <MapPin size={28} />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">{t('CONT_ADDR')}</h3>
+            </div>
+
+            <div className="relative z-10 pt-6">
+              <a
+                href="https://maps.google.com/?q=C.+de+Valois+33,+Puerto+de+la+Cruz,+Tenerife,+Spain"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-white text-black px-6 py-3 rounded-full font-bold uppercase tracking-wider text-xs hover:bg-blue-500 hover:text-white transition-all shadow-lg"
+              >
+                <ExternalLink size={16} /> Open in Google Maps
+              </a>
+            </div>
           </div>
 
         </div>
