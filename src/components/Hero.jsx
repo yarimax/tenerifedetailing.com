@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* Локація */}
           <div className="inline-flex items-center gap-2 border border-blue-500/30 bg-blue-500/10 backdrop-blur-md text-blue-400 px-5 py-2.5 rounded-full mb-8 text-[11px] font-bold uppercase tracking-widest">
-            <MapPin size={16} /> Puerto de la Cruz, Tenerife
+            <MapPin size={16} /> Tenerife
           </div>
 
           {/* Заголовок */}
