@@ -27,9 +27,9 @@ export default function Contact() {
           {/* Кнопки зв'язку */}
           <div className="flex flex-wrap gap-4 pt-4">
             
-            {/* WhatsApp (Новий номер, зелена кнопка) */}
+            {/* WhatsApp (З АКТУАЛЬНИМ НОМЕРОМ) */}
             <a
-              href="https://wa.me/34614397963"
+              href="https://wa.me/34633260683"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 shadow-xl shadow-[#25D366]/20 text-sm group overflow-hidden"
@@ -39,19 +39,20 @@ export default function Contact() {
               {t('CONT_WA', 'WhatsApp')}
             </a>
 
-            {/* Instagram (ЧИСТЕ ТА НАДІЙНЕ ПОСИЛАННЯ) */}
+            {/* Instagram */}
             <a
-              href="https://www.instagram.com/detailermax/"
+              href="https://www.instagram.com/procar.detailing.tenerife/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer noopener"
+              referrerPolicy="no-referrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 shadow-xl shadow-pink-500/20 text-sm"
             >
               <Instagram size={18} /> Instagram
             </a>
 
-            {/* Дзвінок (Новий номер) */}
+            {/* Дзвінок (З АКТУАЛЬНИМ НОМЕРОМ) */}
             <a
-              href="tel:+34614397963"
+              href="tel:+34633260683"
               className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
             >
               <Phone size={18} /> {t('CONT_CALL', 'Call')}
