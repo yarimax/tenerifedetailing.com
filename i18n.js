@@ -93,3 +93,174 @@ i18n
     });
 
 export default i18n;
+{
+  "SERVICES_TITLE": "OUR SERVICES",
+  "SERVICES_SUBTITLE": "Professional car care in Tenerife",
+  "PROJECTS_TITLE": "OUR PROJECTS",
+  "PROJECTS_SUBTITLE": "Examples of completed works and results",
+  "SERVICES": {
+    "POLISHING": {
+      "TITLE": "Paint Polishing & Correction",
+      "DESC": "Removal of scratches, swirls, and restoring deep mirror gloss to your paintwork."
+    },
+    "CERAMIC": {
+      "TITLE": "Ceramic Coating",
+      "DESC": "Long-term hydrophobic and UV protection to keep your paint looking pristine."
+    },
+    "INTERIOR": {
+      "TITLE": "Deep Interior Detailing",
+      "DESC": "Comprehensive steam cleaning, stain removal, and leather conditioning."
+    },
+    "HEADLIGHTS": {
+      "TITLE": "Headlight Restoration",
+      "DESC": "Restoring clarity and maximum light output for safe night driving."
+    },
+    "LEATHER_REPAIR": {
+      "TITLE": "Leather & Interior Restoration",
+      "DESC": "Restoring worn leather seats, steering wheels, and trim to factory condition."
+    }
+  },
+  "PROJECTS": {
+    "P1": {
+      "TITLE": "Porsche 911 GT3",
+      "DESC": "Multi-stage paint correction and 9H ceramic coating application."
+    },
+    "P2": {
+      "TITLE": "BMW M4 Competition",
+      "DESC": "Complete interior dry cleaning, leather restoration, and gloss polishing."
+    },
+    "P3": {
+      "TITLE": "Mercedes-AMG GT",
+      "DESC": "Full detailing package and headlight clarity restoration."
+    }
+  }
+}
+
+{
+  "SERVICES_TITLE": "NUESTROS SERVICIOS",
+  "SERVICES_SUBTITLE": "Cuidado profesional para su vehículo en Tenerife",
+  "PROJECTS_TITLE": "NUESTROS PROYECTOS",
+  "PROJECTS_SUBTITLE": "Ejemplos de trabajos realizados y resultados",
+  "SERVICES": {
+    "POLISHING": {
+      "TITLE": "Pulido y Corrección de Pintura",
+      "DESC": "Eliminación de arañazos y microarañazos, devolviendo un brillo espejo profundo."
+    },
+    "CERAMIC": {
+      "TITLE": "Tratamiento Cerámico",
+      "DESC": "Protección hidrofóbica y contra rayos UV de larga duración para la carrocería."
+    },
+    "INTERIOR": {
+      "TITLE": "Limpieza Detallada de Interiores",
+      "DESC": "Limpieza profunda a vapor, eliminación de manchas y acondicionamiento de piel."
+    },
+    "HEADLIGHTS": {
+      "TITLE": "Restauración de Faros",
+      "DESC": "Devolución de la transparencia y máxima visibilidad para una conducción segura."
+    },
+    "LEATHER_REPAIR": {
+      "TITLE": "Restauración de Cuero e Interior",
+      "DESC": "Reparación de volantes, asientos y plásticos desgastados a estado de fábrica."
+    }
+  },
+  "PROJECTS": {
+    "P1": {
+      "TITLE": "Porsche 911 GT3",
+      "DESC": "Corrección de pintura en varias etapas y aplicación de cerámico 9H."
+    },
+    "P2": {
+      "TITLE": "BMW M4 Competition",
+      "DESC": "Limpieza integral de interior, restauración de cuero y pulido de brillo."
+    },
+    "P3": {
+      "TITLE": "Mercedes-AMG GT",
+      "DESC": "Servicio completo de detailing y restauración de transparencia de faros."
+    }
+  }
+}
+
+{
+  "SERVICES_TITLE": "UNSERE LEISTUNGEN",
+  "SERVICES_SUBTITLE": "Professionelle Fahrzeugpflege auf Teneriffa",
+  "PROJECTS_TITLE": "UNSERE PROJEKTE",
+  "PROJECTS_SUBTITLE": "Beispiele unserer Arbeit und Ergebnisse",
+  "SERVICES": {
+    "POLISHING": {
+      "TITLE": "Lackpolitur & Lackkorrektur",
+      "DESC": "Entfernung von Kratzern und Swirls für einen tiefen Spiegelglanz Ihres Lackes."
+    },
+    "CERAMIC": {
+      "TITLE": "Keramikversiegelung",
+      "DESC": "Langzeitiger hydrophober Schutz und UV-Schutz für die Karosserie."
+    },
+    "INTERIOR": {
+      "TITLE": "Detailing Innenraumreinigung",
+      "DESC": "Tiefenreinigung mit Dampf, Fleckenentfernung und Lederpflege."
+    },
+    "HEADLIGHTS": {
+      "TITLE": "Scheinwerferaufbereitung",
+      "DESC": "Wiederherstellung von Klarheit und maximaler Leuchtkraft für sicheres Fahren."
+    },
+    "LEATHER_REPAIR": {
+      "TITLE": "Leder- & Innenraumrestauration",
+      "DESC": "Reparatur von abgenutzten Sitzen, Lenkrädern und Kunststoffen im Werkszustand."
+    }
+  },
+  "PROJECTS": {
+    "P1": {
+      "TITLE": "Porsche 911 GT3",
+      "DESC": "Mehrstufige Lackkorrektur und 9H-Keramikversiegelung."
+    },
+    "P2": {
+      "TITLE": "BMW M4 Competition",
+      "DESC": "Komplette Innenraumreinigung, Lederrestauration und Glanzpolitur."
+    },
+    "P3": {
+      "TITLE": "Mercedes-AMG GT",
+      "DESC": "Komplettes Detailing-Paket und Wiederherstellung der Scheinwerferklarheit."
+    }
+  }
+}
+
+{
+  "SERVICES_TITLE": "НАШИ УСЛУГИ",
+  "SERVICES_SUBTITLE": "Профессиональный уход за авто на Тенерифе",
+  "PROJECTS_TITLE": "НАШИ ПРОЕКТЫ",
+  "PROJECTS_SUBTITLE": "Примеры выполненных работ и результаты",
+  "SERVICES": {
+    "POLISHING": {
+      "TITLE": "Полировка и коррекция ЛКП",
+      "DESC": "Устранение царапин, паутинки и восстановление глубокого зеркального блеска."
+    },
+    "CERAMIC": {
+      "TITLE": "Керамическое покрытие",
+      "DESC": "Долговечная гидрофобная и УФ-защита кузова от внешних воздействий."
+    },
+    "INTERIOR": {
+      "TITLE": "Детейлинг салона и химчистка",
+      "DESC": "Глубокая очистка паром, удаление пятен и кондиционирование кожи."
+    },
+    "HEADLIGHTS": {
+      "TITLE": "Восстановление фар",
+      "DESC": "Возвращение прозрачности и максимального света для безопасной езды."
+    },
+    "LEATHER_REPAIR": {
+      "TITLE": "Реставрация кожи и интерьера",
+      "DESC": "Восстановление потертостей руля, сидений и элементов салона до заводского состояния."
+    }
+  },
+  "PROJECTS": {
+    "P1": {
+      "TITLE": "Porsche 911 GT3",
+      "DESC": "Многоэтапная коррекция краски и нанесение керамической защиты 9H."
+    },
+    "P2": {
+      "TITLE": "BMW M4 Competition",
+      "DESC": "Полная химчистка салона, реставрация кожи и восстановление блеска."
+    },
+    "P3": {
+      "TITLE": "Mercedes-AMG GT",
+      "DESC": "Комплексный детейлинг-пакет и восстановление прозрачности фар."
+    }
+  }
+}
