@@ -1,97 +1,58 @@
-import { useEffect, useRef } from 'react';
-
-const projects = [
-  {
-    id: 1,
-    title: "CERÁMICA PREMIUM",
-    span: 'md:col-span-2',
-    // Це твоє фото нанесення кераміки, яке я згенерував
-    url: 'https://images.pexels.com/photos/19121908/pexels-photo-19121908.jpeg?auto=compress&cs=tinysrgb&w=1200'
-  },
-  {
-    id: 2,
-    title: "REPARACIÓN PDR",
-    span: 'md:col-span-1',
-    url: 'https://images.pexels.com/photos/8924376/pexels-photo-8924376.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: 3,
-    title: "DETALLADO DE SALÓN",
-    span: 'md:col-span-1',
-    url: 'https://images.pexels.com/photos/3311574/pexels-photo-3311574.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
-  {
-    id: 4,
-    title: "PROTECCIÓN DE FAROS",
-    span: 'md:col-span-2',
-    url: 'https://images.pexels.com/photos/19121910/pexels-photo-19121910.jpeg?auto=compress&cs=tinysrgb&w=1200'
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Gallery() {
-  const sectionRef = useRef(null);
+  const { t } = useTranslation();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.1 });
-
-    sectionRef.current?.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
+  const projects = [
+    {
+      id: 1,
+      title: t('PROJECTS.P1.TITLE', 'Porsche 911 GT3'),
+      description: t('PROJECTS.P1.DESC', 'Multi-stage paint correction and 9H ceramic coating application.'),
+      image: 'https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 2,
+      title: t('PROJECTS.P2.TITLE', 'BMW M4 Competition'),
+      description: t('PROJECTS.P2.DESC', 'Complete interior dry cleaning, leather restoration, and gloss polishing.'),
+      image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    },
+    {
+      id: 3,
+      title: t('PROJECTS.P3.TITLE', 'Mercedes-AMG GT'),
+      description: t('PROJECTS.P3.DESC', 'Full detailing package and headlight clarity restoration.'),
+      image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80'
+    }
+  ];
 
   return (
-    <section ref={sectionRef} id="portfolio" className="py-24 bg-[#050505]">
+    <section id="gallery" className="py-24 bg-[#0a0a0a] text-white">
       <div className="max-w-7xl mx-auto px-6">
-
-        {/* Заголовок (прописаний текстом) */}
         <div className="mb-16">
-          <h2 className="fade-up text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-none mb-4">
-            NUESTROS <span className="text-blue-500">PROYECTOS</span>
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter">
+            {t('PROJECTS_TITLE', 'NUESTROS PROYECTOS')}<span className="text-blue-500">.</span>
           </h2>
-          <p className="fade-up fade-up-delay-1 text-gray-500 text-[12px] font-black uppercase tracking-[0.4em]">
-            Vea ejemplos de nuestro cuidado profesional
+          <p className="text-gray-400 mt-4 text-lg">
+            {t('PROJECTS_SUBTITLE', 'Ejemplos de trabajos realizados y resultados')}
           </p>
         </div>
 
-        {/* СІТКА 2/1 та 1/2 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {projects.map((proj, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {projects.map((item) => (
             <div
-              key={proj.id}
-              className={`fade-up fade-up-delay-${index} relative h-[450px] ${proj.span} rounded-[2.5rem] overflow-hidden group border border-white/5 transition-all duration-700 hover:border-blue-500/40`}
+              key={item.id}
+              className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-300"
             >
-              {/* Зображення */}
-              <img
-                src={proj.url}
-                alt="Detailing project"
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-              />
-
-              {/* Градієнт */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/10 to-transparent" />
-
-              {/* Текст та ефекти */}
-              <div className="absolute inset-0 p-10 flex flex-col justify-end">
-
-                {/* Сині рисочки /// */}
-                <div className="flex gap-1 mb-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform -translate-x-4 group-hover:translate-x-0">
-                  <span className="text-blue-500 font-black text-3xl tracking-tighter italic">///</span>
-                </div>
-
-                {/* Назва (прописана текстом у масиві projects) */}
-                <h3 className="text-white font-black text-3xl md:text-4xl uppercase tracking-tighter leading-none mb-2 transition-transform duration-500 group-hover:-translate-y-2">
-                  {proj.title}
-                </h3>
-
-                {/* Посилання під назвою */}
-                <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-500 ease-in-out">
-                  <p className="text-blue-500 text-sm font-black uppercase tracking-[0.2em]">
-                    Ver proyecto →
-                  </p>
-                </div>
+              <div className="h-64 overflow-hidden relative">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-70" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{item.description}</p>
               </div>
             </div>
           ))}
