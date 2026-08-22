@@ -40,7 +40,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white hover:bg-[#25D366] hover:border-[#25D366] hover:scale-110 transition-all duration-300 shadow-lg"
               >
-                <MessageCircle size={20} />
+                <MessageCircle size={15} />
               </a>
 
               {/* Instagram (Фірмовий градієнтний стиль) */}
@@ -50,7 +50,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg"
               >
-                <Instagram size={20} />
+                <Instagram size={15} />
               </a>
             </div>
           </div>
@@ -58,8 +58,13 @@ export default function Footer() {
         </div>
 
         {/* Копірайт */}
-        <div className="pt-8 text-center text-xs text-gray-500 font-medium tracking-wide">
-          © 2026 PROCAR Detailing Tenerife. {t('FOOTER_R')}
+        import { useTranslation } from 'react-i18next';
+
+        export default function Footer() {
+        const { t } = useTranslation();
+
+        <div className="pt-6 text-center text-xs text-gray-500 font-medium tracking-wide">
+          © 2026 Tenerife Detailing LAB. {t('FOOTER_R')}
         </div>
       </div>
     </footer>
