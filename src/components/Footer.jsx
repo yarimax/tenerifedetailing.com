@@ -58,10 +58,7 @@ export default function Footer() {
         </div>
 
         {/* Копірайт */}
-        import { useTranslation } from 'react-i18next';
-
-        export default function Footer() {
-        const { t } = useTranslation();
+  
 
         <div className="pt-6 text-center text-xs text-gray-500 font-medium tracking-wide">
           © 2026 Tenerife Detailing LAB. {t('FOOTER_R')}
