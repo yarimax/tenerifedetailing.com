@@ -9,20 +9,20 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/10">
           
-          {/* Логотип PROCAR Detailing TENERIFE */}
+          {/* Логотип TENERIFE Detailing LAB */}
           <a href="#home" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 shrink-0">
               <Droplets size={22} />
             </div>
             <div className="flex flex-col text-left">
               <span className="text-white font-black uppercase text-xl leading-none tracking-tight">
-                PROCAR
+                TENERIFE
               </span>
               <span className="text-blue-500 font-bold uppercase text-[10px] leading-tight tracking-widest">
                 Detailing
               </span>
               <span className="text-gray-400 font-medium uppercase text-[8px] leading-tight tracking-widest">
-                TENERIFE
+                LAB
               </span>
             </div>
           </a>
