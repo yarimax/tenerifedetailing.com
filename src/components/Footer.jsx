@@ -1,58 +1,51 @@
+import { Droplets, Instagram, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { MessageCircle, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const { t } = useTranslation();
-  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#050505] border-t border-white/5 py-12">
+    <footer className="bg-[#050505] border-t border-white/10 text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
-        
-        {/* Верхній блок футера */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
           
-          {/* Логотип та брендинг (ОНОВЛЕНО) */}
-          <div className="flex items-center gap-4">
-            {/* Оновлений логотип */}
-            <img src="/path-to-your-logo/logo-td-lab-footer.svg" alt="Tenerife Detailing Lab Logo" className="h-12 w-auto" />
-            
-            <div className="flex flex-col">
-                <h3 className="text-3xl font-black text-white uppercase tracking-tight">
-                  Tenerife <span className="text-blue-500">Detailing</span>
-                </h3>
-                <p className="text-xs text-gray-400 font-bold tracking-[0.4em] uppercase mt-1">
-                  LAB
-                </p>
+          {/* Оновлений логотип PROCAR Detailing TENERIFE */}
+          <a href="#home" className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 shrink-0">
+              <Droplets size={22} />
             </div>
-          </div>
+            <div className="flex flex-col text-left">
+              <span className="text-white font-black uppercase text-xl leading-none tracking-tight">
+                PROCAR
+              </span>
+              <span className="text-blue-500 font-bold uppercase text-[10px] leading-tight tracking-widest">
+                Detailing
+              </span>
+              <span className="text-gray-400 font-medium uppercase text-[8px] leading-tight tracking-widest">
+                TENERIFE
+              </span>
+            </div>
+          </a>
 
-          {/* Соціальні мережі (З правильними посиланнями) */}
-          <div className="flex flex-col items-start md:items-end gap-3">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">
-              {t('FOOTER_SOCIALS', 'МЫ В СЕТЯХ')}
+          {/* Блок соцмереж з підтримкою мов */}
+          <div className="flex flex-col items-center md:items-end gap-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-gray-400">
+              {t('FOLLOW')}
             </span>
-            
             <div className="flex gap-3">
-              {/* WhatsApp */}
-              <a
-                href="https://wa.me/34633260683"
-                target="_blank"
+              <a 
+                href="https://wa.me/34633260683" 
+                target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#25D366] hover:border-[#25D366] hover:scale-110 transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 transition-all"
               >
                 <MessageCircle size={18} />
               </a>
-
-              {/* Instagram (Правильний акаунт) */}
-              <a
-                href="https://https://www.instagram.com/detailermax/"
-                target="_blank"
-                rel="noreferrer noopener"
-                referrerPolicy="no-referrer"
-                aria-label="Instagram"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#833ab4] hover:via-[#fd1d1d] to-[#fcb045] hover:border-transparent hover:scale-110 transition-all duration-300"
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 transition-all"
               >
                 <Instagram size={18} />
               </a>
@@ -61,13 +54,10 @@ export default function Footer() {
 
         </div>
 
-        {/* Копірайт (ОНОВЛЕНО) */}
-        <div className="border-t border-white/5 pt-8 text-center">
-          <p className="text-xs text-gray-600 font-medium italic">
-            © {currentYear} Tenerife Detailing Lab. {t('FOOTER_RIGHTS', 'Все права защищены.')}
-          </p>
+        {/* Копірайт */}
+        <div className="pt-8 text-center text-xs text-gray-500 font-medium">
+          © 2026 PROCAR Detailing Tenerife. {t('FOOTER_R')}
         </div>
-
       </div>
     </footer>
   );
