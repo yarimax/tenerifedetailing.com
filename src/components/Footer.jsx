@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] border-t border-white/10 text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-white/10">
           
-          {/* Оновлений логотип PROCAR Detailing TENERIFE */}
+          {/* Логотип PROCAR Detailing TENERIFE */}
           <a href="#home" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500 shrink-0">
               <Droplets size={22} />
@@ -27,27 +27,30 @@ export default function Footer() {
             </div>
           </a>
 
-          {/* Блок соцмереж з підтримкою мов */}
+          {/* Блок соцмереж у стилі макета */}
           <div className="flex flex-col items-center md:items-end gap-3">
             <span className="text-xs font-bold uppercase tracking-widest text-gray-400">
               {t('FOLLOW')}
             </span>
-            <div className="flex gap-3">
+            <div className="flex gap-4">
+              {/* WhatsApp (Фірмовий зелений стиль) */}
               <a 
                 href="https://wa.me/34633260683" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 transition-all"
+                className="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white hover:bg-[#25D366] hover:border-[#25D366] hover:scale-110 transition-all duration-300 shadow-lg"
               >
-                <MessageCircle size={18} />
+                <MessageCircle size={20} />
               </a>
+
+              {/* Instagram (Фірмовий градієнтний стиль) */}
               <a 
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-500/20 hover:border-blue-500/40 transition-all"
+                className="w-12 h-12 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent hover:scale-110 transition-all duration-300 shadow-lg"
               >
-                <Instagram size={18} />
+                <Instagram size={20} />
               </a>
             </div>
           </div>
@@ -55,7 +58,7 @@ export default function Footer() {
         </div>
 
         {/* Копірайт */}
-        <div className="pt-8 text-center text-xs text-gray-500 font-medium">
+        <div className="pt-8 text-center text-xs text-gray-500 font-medium tracking-wide">
           © 2026 PROCAR Detailing Tenerife. {t('FOOTER_R')}
         </div>
       </div>
