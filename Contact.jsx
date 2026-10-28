@@ -34,7 +34,7 @@ export default function Contact() {
 
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="https://wa.me/34633260683"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-blue-500 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-xl shadow-blue-500/20 text-sm"
@@ -42,7 +42,7 @@ export default function Contact() {
                 <MessageCircle size={18} /> {t('CONT_WHATSAPP')}
               </a>
               <a
-                href="tel:+34633260683"
+                href="tel:"
                 className="inline-flex items-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-4 rounded-full font-black uppercase tracking-widest hover:bg-white/10 transition-all text-sm"
               >
                 <Phone size={18} /> {t('CONT_CALL')}
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="h-[420px] rounded-[2rem] overflow-hidden border border-white/5 shadow-2xl">
             <iframe
               title="Location"
-              src="https://maps.google.com/maps?q=C.+de+Valois+33,+Puerto+de+la+Cruz,+Tenerife,+Spain&output=embed&z=16"
+              src=""
               width="100%"
               height="100%"
               style={{ border: 0, filter: 'grayscale(1) invert(0.9)' }}
