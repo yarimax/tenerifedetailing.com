@@ -29,7 +29,7 @@ export default function Contact() {
             
             {/* WhatsApp */}
             <a
-              href="https://wa.me/34614397963"
+              href="https://wa.me/"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-black uppercase tracking-widest transition-all duration-300 hover:bg-[#20ba5a] hover:scale-105 active:scale-95 shadow-xl shadow-[#25D366]/20 text-sm group overflow-hidden"
@@ -41,7 +41,7 @@ export default function Contact() {
 
             {/* Instagram (Правильний акаунт) */}
             <a
-              href="https://www.instagram.com/procar.detailing.tenerife/"
+              href="https://"
               target="_blank"
               rel="noreferrer noopener"
               referrerPolicy="no-referrer"
